@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Roboto Mono", monospace;
+    src: url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100..700&display=swap");
+}
+body {
+    font-family: "Roboto Mono", monospace;
+}

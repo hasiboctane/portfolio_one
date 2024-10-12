@@ -1,16 +1,19 @@
 import React from 'react';
-
+import SocialLinks from './SocialLinks';
 const HeroSection = () => {
     return (
-        <div id="hero" className="flex flex-col items-center justify-center pt-16 pb-10">
-            <div className="text-center">
-                <h1 className="text-2xl md:text-4xl text-fuchsia-800 font-medium mb-1 md:mb-3 dark:text-fuchsia-600">Hi, I am Hasib</h1>
-                <p className="text-md md:text-xl max-w-md mb-5 text-gray-700 dark:text-fuchsia-100">I am a fullstack web developer.</p>
-                <a href={"https://github.com/hasiboctane"} target="_blank" className="inline-block mt-5 bg-fuchsia-700 dark:bg-fuchsia-700 px-7 py-2 text-base border border-transparent font-medium rounded-md text-white hover:bg-fuchsia-800 dark:hover:bg-fuchsia-500 md:text-md">
-                    Github
-                </a>
+        <>
+            <div id="hero" className="flex flex-col md:flex-row items-center justify-center gap-10 py-14 md:py-16 mb-10 shadow-md px-2 mt-6 md:mt-10 ">
+                <div className=" flex flex-col items-center justify-between pb-4 md:pr-10 md:w-[50%] h-full  ">
+                    <h2 className="text-3xl md:text-4xl text-fuchsia-800 font-medium mb-2 md:mb-4 dark:text-fuchsia-600">Hi, I am Hasib</h2>
+                    <p className="text-lg md:text-xl max-w-md mb-6 md:mb-8 text-slate-800 dark:text-fuchsia-200">I am a fullstack web developer.</p>
+                    <SocialLinks />
+                </div>
+                <div className=' flex justify-end md:w-[50%] '>
+                    <img src="/images/coding.png" alt="hasib octane" className=" md:w-3/4 object-center rounded-lg" />
+                </div>
             </div>
-        </div>
+        </>
     );
 }
 
