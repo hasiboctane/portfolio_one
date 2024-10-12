@@ -5,7 +5,7 @@ import ServiceItem from "./ServiceItem.jsx";
 const Services = () => {
     return (
 
-        <div className="py-12">
+        <div id="services" className="pt-16 pb-14">
             <SectionTitle>
                 My Services
             </SectionTitle>

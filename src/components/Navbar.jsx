@@ -12,7 +12,7 @@ const Navbar = () => {
         { name: 'Home', href: '#', onClick: () => setActiveItem('Home') },
         { name: 'About', href: '#about', onClick: () => setActiveItem('About') },
         { name: 'Projects', href: '#projects', onClick: () => setActiveItem('Projects') },
-        { name: 'Contact', href: '#contact', onClick: () => setActiveItem('Contact') }
+        { name: 'Services', href: '#services', onClick: () => setActiveItem('Services') }
     ]
 
     return (
@@ -26,7 +26,7 @@ const Navbar = () => {
                                     key={item.name}
                                     href={item.href}
                                     onClick={item.onClick}
-                                    className={`text-fuchsia-700 hover:bg-fuchsia-700 hover:text-slate-50 dark:hover:text-fuchsia-200 px-2 py-1 rounded-md font-semibold hover:-translate-y-1 transition duration-300 ease-in-out border border-fuchsia-700 ${activeItem === item.name ? 'bg-fuchsia-700 text-slate-50 dark:text-fuchsia-200' : ''
+                                    className={`text-fuchsia-700 hover:bg-fuchsia-700 hover:text-slate-50 dark:hover:bg-opacity-60 dark:hover:text-fuchsia-200  px-2 py-1 rounded-md font-semibold hover:-translate-y-1 transition duration-300 ease-in-out border border-fuchsia-700 ${activeItem === item.name ? 'bg-fuchsia-700 bg-opacity-85 dark:bg-opacity-70 text-slate-50 dark:text-fuchsia-200' : ''
                                         }`}
                                 >
                                     {item.name}
@@ -37,7 +37,7 @@ const Navbar = () => {
                     <div className="md:hidden">
                         <button
                             onClick={toggleMenu}
-                            className="inline-flex items-center justify-center p-2 rounded-md text-fuchsia-700 hover:text-white hover:bg-fuchsia-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-fuchsia-800 focus:ring-white transition duration-300 ease-in-out"
+                            className="inline-flex items-center justify-center px-1.5 py-1.5  rounded-md text-fuchsia-700 border border-fuchsia-700 hover:text-fuchsia-200 hover:bg-fuchsia-700  transition duration-300 ease-in-out"
                         >
                             {isOpen ? <FaTimes /> : <FaBars />}
                         </button>
@@ -45,8 +45,8 @@ const Navbar = () => {
                 </div>
             </div>
             {isOpen && (
-                <div className="md:hidden">
-                    <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <div className="md:hidden relative z-10 ">
+                    <div className="px-4 py-3 space-y-2  absolute top-0 right-0 bg-slate-800 bg-opacity-85 rounded-md">
                         {menuItems.map((item) => (
                             <a
                                 key={item.name}
@@ -55,7 +55,7 @@ const Navbar = () => {
                                     item.onClick();
                                     toggleMenu();
                                 }}
-                                className={`text-fuchsia-700 hover:bg-fuchsia-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition duration-300 ease-in-out border border-fuchsia-700 mb-2 ${activeItem === item.name ? 'bg-fuchsia-700 text-white' : ''
+                                className={`text-center text-fuchsia-600 hover:bg-fuchsia-700 hover:bg-opacity-40 hover:text-fuchsia-200 block px-2 py-1.5 rounded-md  font-semibold transition duration-300 ease-in-out border border-fuchsia-600 mb-2 ${activeItem === item.name ? 'bg-fuchsia-700 bg-opacity-60 text-white' : ''
                                     }`}
                             >
                                 {item.name}

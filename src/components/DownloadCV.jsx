@@ -18,7 +18,7 @@ const DownloadCV = () => {
     };
     return (
         <>
-            <button onClick={handleDownload} className="text-center text-fuchsia-600 hover:text-fuchsia-100 hover:bg-fuchsia-600  border border-fuchsia-500 rounded-md px-1.5 py-1.5 dark:text-fuchsia-600 dark:hover:bg-fuchsia-700 dark:hover:text-fuchsia-100 transition duration-300">
+            <button onClick={handleDownload} className="text-center text-fuchsia-600 hover:text-fuchsia-100 hover:bg-fuchsia-600  border border-fuchsia-500 rounded-md px-1.5 py-1.5 dark:text-fuchsia-600 dark:hover:bg-fuchsia-700 dark:hover:text-fuchsia-100 dark:hover:bg-opacity-75 transition duration-300">
                 <span className='flex gap-2'>Download CV <FaDownload className="w-5 h-5" /></span>
             </button>
             {/* Alert */}
