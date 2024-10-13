@@ -10,7 +10,7 @@ const HeroSection = () => {
                     <SocialLinks />
                 </div>
                 <div className=' flex justify-end md:w-[50%] '>
-                    <img src="/images/coding.png" alt="hasib octane" className=" md:w-3/4 object-center rounded-lg" />
+                    <img src="/images/coding.png" alt="hasib octane" className=" md:w-3/4 object-center rounded-lg md:mr-2" />
                 </div>
             </div>
         </>

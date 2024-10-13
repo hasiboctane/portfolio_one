@@ -39,7 +39,7 @@ const App = () => {
                             <button
                                 type="button"
                                 onClick={handleThemeButton}
-                                className=" text-white bg-fuchsia-700 bg-opacity-80 px-1 py-0.5 text-lg hover:bg-opacity-100 rounded-md "
+                                className=" text-white bg-fuchsia-700 bg-opacity-80 px-1 md:px-1.5 py-0.5 text-lg hover:bg-opacity-100 rounded-md "
                             >{theme === 'dark' ? '🌞' : '🌙'}</button>
                         </div>
                         <Navbar />
