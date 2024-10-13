@@ -18,7 +18,7 @@ const Navbar = () => {
     ]
 
     return (
-        <nav className="w-full bg-transparent">
+        <nav className="w-full ">
             <div className=" ">
                 <div className="flex items-center justify-end h-14">
                     <div className="hidden md:block">
@@ -28,7 +28,7 @@ const Navbar = () => {
                                     key={item.name}
                                     href={item.href}
                                     onClick={item.onClick}
-                                    className={`text-slate-800  bg-fuchsia-600 dark:bg-opacity-80 hover:bg-fuchsia-600 hover:text-fuchsia-200 dark:hover:text-slate-100 px-1.5 py-1 rounded-md hover:-translate-y-1 transition duration-300 ease-in-out ${activeItem === item.name ? ' bg-fuchsia-600 dark:bg-opacity-80 text-white ' : ''
+                                    className={`text-slate-800  bg-fuchsia-600 dark:bg-opacity-80 hover:bg-fuchsia-600 hover:text-yellow-300 px-1.5 py-1 rounded-md hover:-translate-y-1 transition duration-300 ease-in-out ${activeItem === item.name ? ' bg-fuchsia-600 dark:bg-opacity-80 text-yellow-300 ' : ''
                                         }`}
                                 >
                                     {item.icon}
@@ -57,7 +57,7 @@ const Navbar = () => {
                                     item.onClick();
                                     toggleMenu();
                                 }}
-                                className={`text-slate-800  bg-fuchsia-600 dark:bg-opacity-80 hover:bg-fuchsia-600 hover:text-fuchsia-200 dark:hover:text-slate-700 px-1 py-1 rounded-md hover:-translate-y-1 transition duration-300 ease-in-out ${activeItem === item.name ? ' bg-fuchsia-600 dark:bg-opacity-80 text-white' : ''
+                                className={`text-slate-800  bg-fuchsia-600 dark:bg-opacity-80 hover:bg-fuchsia-600 hover:text-yellow-300  px-1 py-1 rounded-md hover:-translate-y-1 transition duration-300 ease-in-out ${activeItem === item.name ? ' bg-fuchsia-600 dark:bg-opacity-80 text-yellow-300' : ''
                                     }`}
                             >
                                 {item.icon}
