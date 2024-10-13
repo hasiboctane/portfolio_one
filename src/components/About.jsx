@@ -3,7 +3,7 @@ import DownloadCV from "./DownloadCV.jsx";
 const About = () => {
     return (
         <>
-            <div id="about" className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-0 pt-16 md:pt-20 pb-20 md:pb-28 shadow-md px-2 ">
+            <div id="about" className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-0 pt-16 md:pt-20 pb-20 md:pb-28  px-2 mb-20">
                 <div className='mt-4  flex justify-start md:w-[40%] '>
                     <img src="/images/hero/dressed.png" alt="hasib octane" className=" md:w-4/5 object-center rounded-lg" />
                 </div>

@@ -32,7 +32,7 @@ const App = () => {
 
             <div className="bg-slate-100 dark:bg-slate-800 ">
 
-                <div className="max-w-4xl mx-auto w-11/12  ">
+                <div className="max-w-5xl mx-auto w-11/12  ">
                     <div className='flex justify-between items-center sticky top-0 z-10 shadow-md  rounded-b-md bg-slate-200 bg-opacity-50 dark:bg-slate-800 dark:bg-opacity-70 px-2 py-0'>
 
                         <div className=''>
