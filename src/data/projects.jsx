@@ -61,7 +61,7 @@ export default [
                 'Shopping cart',
                 'Order management'
             ],
-            longDescription: 'REST API for e-commerce built with Node.js, Express.js, and MongoDB. Includes user authentication, product management, secure payment processing, and order tracking capabilities.'
+            longDescription: 'REST API for e-commerce built with Node.js, Express.js, and MongoDB. Includes user authentication, product management, shopping cart, and order capabilities.'
         }
     },
     // {
