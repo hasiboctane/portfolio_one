@@ -1,7 +1,11 @@
 import React from 'react'
 import projects from '../data/projects'
 import SectionTitle from './SectionTitle'
-
+import { FaEye } from "react-icons/fa";
+import { FaRegEyeSlash } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { MdPrivacyTip } from "react-icons/md";
+import { IoReader } from "react-icons/io5";
 const ProjectSection = () => {
     return (
         <>
@@ -26,13 +30,19 @@ const ProjectSection = () => {
                                         <p className='dark:text-slate-100 text-sm '>{project.description}</p>
                                     </div>
                                     <div className='pb-2 flex items-center justify-between  '>
-                                        <a href="#" className='px-2.5 py-1 border text-fuchsia-600 border-fuchsia-500 rounded-md dark:text-fuchsia-400 text-sm hover:dark:bg-fuchsia-800 hover:dark:text-slate-50'>
-                                            Github
-                                        </a>
-                                        <a href="#" className='px-2.5 py-1 border text-fuchsia-600 border-fuchsia-500 rounded-md dark:text-fuchsia-400 text-sm
-                                        hover:dark:bg-fuchsia-800 hover:dark:text-slate-50 '>
-                                            See more
-                                        </a>
+                                        {
+                                            project.githubLink ? <a href={project.githubLink} className='px-2 py-1 border text-fuchsia-600 border-fuchsia-500 rounded-md dark:text-fuchsia-400 text-sm hover:dark:bg-fuchsia-800 hover:dark:text-slate-50' target='_blank'>
+                                                {<FaGithub />}
+                                            </a> : <MdPrivacyTip className='w-5 h-5 text-fuchsia-600 border-fuchsia-500 rounded-md dark:text-fuchsia-400 ' />
+                                        }
+
+                                        {
+                                            project.liveLink ? <a href={project.liveLink} className='px-2.5 py-1 border text-fuchsia-600 border-fuchsia-500 rounded-md dark:text-fuchsia-400 text-sm hover:dark:bg-fuchsia-800 hover:dark:text-slate-50' target='_blank'>
+                                                <FaEye />
+                                            </a> : <a href="" className='px-2 py-1  border text-fuchsia-600 border-fuchsia-500 rounded-md dark:text-fuchsia-400 text-sm hover:dark:bg-fuchsia-800 hover:dark:text-slate-50'>
+                                                <IoReader />
+                                            </a>
+                                        }
                                     </div>
                                 </div>
 

@@ -1,7 +1,6 @@
 import { MdWeb } from "react-icons/md";
 import { VscCode } from "react-icons/vsc";
-import { CiMobile1 } from "react-icons/ci";
-
+import { FaWordpressSimple } from "react-icons/fa";
 export default [
     {
         title: 'Web Design',
@@ -14,8 +13,8 @@ export default [
         icon: <VscCode className="w-full h-full" />
     },
     {
-        title: 'App Development',
-        description: 'Mobile app design and development with react-native ',
-        icon: <CiMobile1 className="h-full w-full" />
+        title: 'WordPress/WooCommerce',
+        description: 'Wordpress/WooCommerce website design & development',
+        icon: < FaWordpressSimple className="h-full w-full" />
     }
 ];

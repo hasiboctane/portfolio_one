@@ -1,48 +1,51 @@
-import project1 from '/images/projects/project-1.jpg';
-import project2 from '/images/projects/project-2.jpg';
-import project3 from '/images/projects/project-3.jpg';
-import project4 from '/images/projects/project-4.jpg';
-import project5 from '/images/projects/project-5.jpg';
-import project6 from '/images/projects/project-6.png';
+// import project1 from '/images/projects/project-1.jpg';
+import portfolio_one from '../assets/images/portfolio_one.jpg';
+import rest_api from '../assets/images/rest_api.jpg';
+import ecommerce_one_API from '../assets/images/ecommerce_one_API.jpg';
+import dressZone from '../assets/images/project_dress_zone.jpg';
+import agency from '../assets/images/agency.jpg'
 export default [
     {
         id: 1,
-        title: 'Portfolio',
-        description: 'Fully responsive portfolio with react js, tailwind css',
-        image: project1
+        title: 'Agency Website',
+        description: 'Fully responsive agency website using react js ',
+        // githubLink: 'https://github.com/hasiboctane',
+        image: agency
     },
     {
         id: 2,
-        title: 'Blog Application',
-        description: 'Full stack web development with php, mysql, laravel',
-        image: project2
+        title: 'WooCommerce Website',
+        description: 'Wordpress/WooCommerce online store',
+        // githubLink: 'https://github.com/hasiboctane',
+        liveLink: 'https://dresszone.fashion/',
+        image: dressZone
     },
     {
         id: 3,
-        title: 'Android Application',
-        description: 'Android App with react native',
-        image: project3
+        title: 'REST API ',
+        description: 'REST API using Express js, MongoDB etc ',
+        githubLink: 'https://github.com/hasiboctane/api_one',
+        image: rest_api
     },
     {
         id: 4,
-        title: 'E-commerce website',
-        description: 'Fully responsive e-commerce with Laravel, Tailwind css',
-        image: project4
+        title: 'Portfolio website',
+        description: 'Fully responsive portfolio with react js, Tailwind css',
+        liveLink: 'https://hasibbt7274.vercel.app/',
+        githubLink: 'https://github.com/hasiboctane/portfolio_one',
+        image: portfolio_one
     },
     {
         id: 5,
-        title: 'Rest API',
-        description: 'E-commerce Rest API using Laravel 11, mysql, etc ',
-        image: project5
+        title: 'E-commerce API',
+        description: 'E-commerce Rest API using Express js, MongoDB etc ',
+        githubLink: 'https://github.com/hasiboctane/ecommerce_one',
+        image: ecommerce_one_API
     },
-    {
-        id: 6,
-        title: 'Agency Website',
-        description: 'Fully responsive agency website using react js ',
-        image: project6
-    }
+    // {
+    //     id: 6,
+    //     title: 'Portfolio Website',
+    //     description: 'Fully responsive portfolio with react js, tailwind css',
+    //     image: project1
+    // }
 ]
-
-{/* <a href={"https://github.com/hasiboctane"} target="_blank" className="inline-block mt-5 bg-fuchsia-700 dark:bg-fuchsia-700 px-7 py-2 text-base border border-transparent font-medium rounded-md text-white hover:bg-fuchsia-800 dark:hover:bg-fuchsia-500 md:text-md">
-                    Github
-                </a> */}

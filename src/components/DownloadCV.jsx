@@ -9,7 +9,7 @@ const DownloadCV = () => {
     }
     const downloadCV = () => {
         const link = document.createElement('a');
-        link.href = '/CV_2024.pdf';
+        link.href = '/My_Cv_2025.pdf';
         // link.download = 'Hasib_Islam_CV.pdf';
         document.body.appendChild(link);
         link.click();

@@ -8,7 +8,7 @@ const About = () => {
                     <img src="/images/hero/dressed.png" alt="hasib octane" className=" md:w-4/5 object-center rounded-lg" />
                 </div>
                 <div className="md:w-[60%] px-2 flex flex-col items-center gap-6">
-                    <p className="text-md text-gray-700 dark:text-gray-200 text-center">
+                    <p className="text-lg text-gray-700 dark:text-gray-200 text-center">
                         <span className="text-fuchsia-600 dark:text-fuchsia-500">I have a passion for technology</span>, and I am looking for new ways to apply my
                         knowledge and experience to the challenges and opportunities of the
                         workplace. I am a self-educated programmer and a quick learner. Hopefully,
